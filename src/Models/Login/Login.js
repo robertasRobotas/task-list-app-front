@@ -33,7 +33,7 @@ class Login extends Component {
             password: this.state.password,
         };
 
-            await axios.post('http://localhost:8080/user/login', userInfo)
+            await axios.post('https://task-list-app.herokuapp.com/user/login', userInfo)
                 .then((result)=>{
 
                     localStorage.setItem('token', result.data.jwt)

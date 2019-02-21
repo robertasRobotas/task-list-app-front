@@ -20,7 +20,7 @@ class EditTaskList extends Component {
         let token = localStorage.getItem("token");
         let listInfo = {listID: this.props.match.params.id};
 
-        axios.post('http://localhost:8080/list/getUserListTasks' , listInfo)
+        axios.post('https://task-list-app.herokuapp.com/list/getUserListTasks' , listInfo)
             .then((result)=>{
                 this.setState({
                     listName : result.data.listName,
@@ -57,7 +57,7 @@ class EditTaskList extends Component {
             let listInfo = {listID: this.props.match.params.id};
             let token = localStorage.getItem("token");
 
-            axios.post('http://localhost:8080/list/addOneTaskToList', task, {
+            axios.post('https://task-list-app.herokuapp.com/list/addOneTaskToList', task, {
                 headers: {
                     Authorization: 'Bearer ' + token
                 }
@@ -65,7 +65,7 @@ class EditTaskList extends Component {
                 .then((result)=>{
 
 
-                    axios.post('http://localhost:8080/list/getUserListTasks' , listInfo)
+                    axios.post('https://task-list-app.herokuapp.com/list/getUserListTasks' , listInfo)
                         .then((result)=>{
                             this.setState({
                                 listName : result.data.listName,
@@ -96,11 +96,11 @@ class EditTaskList extends Component {
         let listInfo = {listID: this.props.match.params.id};
 
 
-        axios.post('http://localhost:8080/list/deleteTask', taskInfo)
+        axios.post('https://task-list-app.herokuapp.com/list/deleteTask', taskInfo)
             .then(() => {
 
 
-                axios.post('http://localhost:8080/list/getUserListTasks' , listInfo)
+                axios.post('https://task-list-app.herokuapp.com/list/getUserListTasks' , listInfo)
                     .then((result)=>{
                         this.setState({
                             listName : result.data.listName,

@@ -28,7 +28,7 @@ class UsersList extends Component {
         let token = localStorage.getItem("token");
 
 
-        axios.get('http://localhost:8080/list/getAllUserLists', {
+        axios.get('https://task-list-app.herokuapp.com/list/getAllUserLists', {
             headers: {
                 Authorization: 'Bearer ' + token
             }
@@ -58,7 +58,7 @@ class UsersList extends Component {
 
         let token = localStorage.getItem("token");
 
-        axios.post('http://localhost:8080/list/deleteList', {id : this.state.listID}, {
+        axios.post('https://task-list-app.herokuapp.com/list/deleteList', {id : this.state.listID}, {
             headers: {
                 Authorization: 'Bearer ' + token
             }
@@ -68,7 +68,7 @@ class UsersList extends Component {
 
 
 
-            axios.get('http://localhost:8080/list/getAllUserLists', {
+            axios.get('https://task-list-app.herokuapp.com/list/getAllUserLists', {
                 headers: {
                     Authorization: 'Bearer ' + token
                 }

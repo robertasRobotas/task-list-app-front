@@ -14,7 +14,7 @@ class CreateList extends Component {
     componentWillMount() {
         let token = localStorage.getItem("token");
 
-        axios.get('http://localhost:8080/user/authUser',
+        axios.get('https://task-list-app.herokuapp.com/user/authUser',
             {
                 headers: {
                     Authorization: 'Bearer ' + token,
@@ -58,7 +58,7 @@ class CreateList extends Component {
             let listInfo = {listName: this.state.listName};
 
 
-            axios.post('http://localhost:8080/list/createList', listInfo, {
+            axios.post('https://task-list-app.herokuapp.com/list/createList', listInfo, {
                 headers: {
                     Authorization: 'Bearer ' + token,
                     'Content-Type': 'application/json'

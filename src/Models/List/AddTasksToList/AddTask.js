@@ -22,7 +22,7 @@ class AddTask extends Component {
         let token = localStorage.getItem("token");
         let listID = {listID :this.props.match.params.id};
 
-        axios.post('http://localhost:8080/list/getUserListsDetails', listID,
+        axios.post('https://task-list-app.herokuapp.com/list/getUserListsDetails', listID,
             {
                 headers: {
                     Authorization: 'Bearer ' + token,
@@ -121,7 +121,7 @@ class AddTask extends Component {
 
             let token = localStorage.getItem("token");
 
-            axios.post('http://localhost:8080/list/addTaskToList', task, {
+            axios.post('https://task-list-app.herokuapp.com/list/addTaskToList', task, {
                 headers: {
                     Authorization: 'Bearer ' + token,
                     'Content-Type': 'application/json'

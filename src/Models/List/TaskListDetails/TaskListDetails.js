@@ -16,7 +16,7 @@ class TaskListDetails extends Component {
     componentWillMount() {
 
         let listInfo = {listID: this.props.match.params.id};
-        axios.post('http://localhost:8080/list/getUserListTasks', listInfo)
+        axios.post('https://task-list-app.herokuapp.com/list/getUserListTasks', listInfo)
             .then((result) => {
                 this.setState({
                     listName: result.data.listName,
@@ -32,12 +32,12 @@ class TaskListDetails extends Component {
             taskID: id
         };
 
-        axios.post('http://localhost:8080/list/changeTaskStatus', taskInfo)
+        axios.post('https://task-list-app.herokuapp.com/list/changeTaskStatus', taskInfo)
             .then((result) => {
 
 
                 let listInfo = {listID: this.props.match.params.id};
-                axios.post('http://localhost:8080/list/getUserListTasks', listInfo)
+                axios.post('https://task-list-app.herokuapp.com/list/getUserListTasks', listInfo)
                     .then((result) => {
                         this.setState({
                             listTasks: result.data.tasks
