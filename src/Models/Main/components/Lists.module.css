@@ -1,0 +1,34 @@
+.listButton{
+    display: inline-block;
+    margin: 20px 3% 20px 3%;
+
+    border: none;
+    padding: 10px;
+    width: 140px;
+    height: 80px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 500;
+
+    background: #114357;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+.listButton:hover{
+
+    cursor: pointer;
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0e3162, #641616);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1347af, #791818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.date{
+    font-size: 12px;
+    font-weight: 500;
+}
+

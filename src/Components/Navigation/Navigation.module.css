@@ -1,0 +1,33 @@
+.title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+    color: #641616;
+}
+
+.navigationLinksWrapper{
+    text-align: left;
+}
+.link{
+    padding: 10px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    background-color: rgba(211, 211, 211, 0.47);
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-radius: 15px;
+    margin: 3px 3px;
+    margin-bottom: 5px;
+}
+
+.linkLink{
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: #dadada;
+}

@@ -1,0 +1,11 @@
+.relativeLayer {
+    position:relative;
+    background-color: #0e3162;
+}
+
+.fixedLayer {
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #641616;
+}

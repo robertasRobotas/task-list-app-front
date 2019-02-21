@@ -1,0 +1,63 @@
+.title{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background-color: #d4d4d4;
+    width:170px;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+
+}
+
+.listsWrapper{
+    margin: 3px 3px;
+    margin-top: 20px;
+    background-color: #d4d4d4;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 300px;
+    overflow: auto;
+
+}
+
+.listLink{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color : #7a1818;
+}
+
+.listLink:hover{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color : #461010;
+}
+
+.logout{
+    padding: 10px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    background-color: rgba(211, 211, 211, 0.47);
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-radius: 15px;
+    margin: 3px 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: absolute;
+    width: 160px;
+    bottom: 20px;
+}
+
+.logout:hover{
+    background-color: rgba(191, 191, 191, 0.47);
+}

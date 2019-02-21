@@ -1,0 +1,174 @@
+.window{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  min-width: 800px;
+  min-height: 100vh;
+
+  -webkit-box-shadow: 0px 0px 166px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 166px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 166px 0px rgba(0,0,0,0.75);
+}
+
+
+.leftBox{
+
+  min-width: 200px;
+  background-color: white;
+  float: left;
+  height: 100vh;
+  position: fixed;
+}
+
+.rightBox{
+  width: calc(100% - 200px);
+  background-color: #282c34;
+  float: right;
+  height: auto;
+  min-height: 100vh;
+}
+
+
+.title{
+  text-align: center;
+  padding: 70px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.addListButton{
+  margin: auto;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
+  width: 140px;
+  height: 80px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 500;
+
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.addListButton:hover{
+
+  cursor: pointer;
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0e3162, #641616);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1347af, #791818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.buttonWrapper{
+  text-align: center;
+}
+
+.plus{
+  font-size: 30px;
+}
+
+.listName{
+  text-align: center;
+  border: none;
+  width: 300px;
+  padding: 4px;
+  height: 20px;
+}
+
+.listNameWrapper{
+  text-align: center;
+
+}
+
+.taskInput{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.addTaskButton{
+  background-color: #61dafb;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.addTaskButtonWrapper{
+  margin-top: 30px;
+}
+
+.plus{
+  font-size: 30px;
+}
+
+
+.createListButton{
+  background-color: darkorange;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.task{
+
+  width: 100%;
+  background-color: #61dafb;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.taskWrapper{
+  width: 300px;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+  transition: 0.3s;
+
+}
+
+.taskTitle{
+  padding: 10px;
+  width: 210px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.taskOptions{
+  padding: 10px;
+  width: 90px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: #641616;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+}
+
+.taskOptions:hover{
+  background-color: white;
+}
+
+.validationError{
+  margin-top: 10px;
+  text-align: center;
+  color: #630100;
+  font-size: 14px;
+  font-weight: 500;
+}
